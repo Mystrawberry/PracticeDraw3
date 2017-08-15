@@ -32,18 +32,26 @@ public class Practice03SetTextSizeView extends View {
         // 使用 paint.setTextSize() 来设置不同大小的文字
 
         // 第一处：文字大小 16
+        setTextSize(16);
         canvas.drawText(text, 50, y, paint);
 
         y += 30;
-        // 第一处：文字大小 24
+        // 第二处：文字大小 24
+        setTextSize(24);
         canvas.drawText(text, 50, y, paint);
 
         y += 55;
-        // 第一处：文字大小 48
+        // 第三处：文字大小 48
+        setTextSize(50);
         canvas.drawText(text, 50, y, paint);
 
         y += 80;
-        // 第一处：文字大小 72
+        // 第四处：文字大小 72
+        setTextSize(72);
         canvas.drawText(text, 50, y, paint);
+    }
+
+    private void setTextSize(float size){
+        paint.setTextSize(size);
     }
 }
